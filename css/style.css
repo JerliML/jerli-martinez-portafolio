@@ -32,27 +32,19 @@ main {
 }
 
 ::view-transition-old(root) {
-    animation-name: slide-out-up;
+    animation: none;
 }
 
 ::view-transition-new(root) {
     animation-name: slide-in-bottom;
 }
 
-@keyframes slide-out-up {
+@keyframes slide-in-bottom {
     from {
-        translate: 0 0;
-        opacity: 1;
+        translate: 0 100vh;
     }
     to {
-        translate: 0 -20vh;
-        opacity: 0;
-    }
-}
-
-@keyframes slide-in {
-    from {
-        translate: 100vw;
+        translate: 0 0;
     }
 }
 
