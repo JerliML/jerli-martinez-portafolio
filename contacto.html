@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="assets/assets-index/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <button id="abrir" class="abrir-menu"><img class="menu-ham" src="assets/assets-index/menu-cerrado.png"
+                alt="menu-cerrado"></button>
+        <nav id="nav" class="nav">
+            <button id="cerrar" class="cerrar-menu"> <img class="menu-ham" src="assets/assets-index/menu-abierto.png"
+                    alt="menu-abierto"> </button>
+            <a class="enlace1" href="index.html">inicio</a>
+            <a class="enlace1" href="sobre.html">sobre</a>
+            <a class="enlace1" href="proyectos.html">proyectos</a>
+            <a class="enlace1" href="contacto.html">contacto</a>
+        </nav>
+    </header>
+    <div class="contenedor-principal">
+        <main class="contenido">
+            <section id="contacto" class="contactame-cuadro">
+                <div class="form-titulo">
+                    <h2>¿quieres contactarme?</h2>
+                </div>
+                <div class="form-subtitulo">
+                    <h3>mándame un correo aquí</h3>
+                </div>
+                <div class="formulario-bloque">
+                    <form action="https://formspree.io/f/mjywpwbd" method="POST" autocomplete="off">
+                        <div class="form-grupo">
+                            <p class="body2-oscuro">Nombre</p>
+                            <input type="text" name="nombre" class="campo">
+                        </div>
+                        <div class="form-grupo">
+                            <p class="body2-oscuro">Correo</p>
+                            <input type="text" name="correo" class="campo">
+                        </div>
+                        <div class="form-grupo">
+                            <p class="body2-oscuro">Déjame tu idea aquí</p>
+                            <textarea name="mensaje"></textarea>
+                        </div>
+                        <input type="submit" name="enviar" value="enviar mensaje" class="enviar">
+                    </form>
+                </div>
+                <div class="form-info">
+                    <h3>o puedes buscarme en...</h3>
+                    <a href="https://github.com/JerliML" target="_blank" class="externallink">Github - JerliML</a>
+                    <a href="https://www.linkedin.com/in/jerliana-martinez-921669297/" target="_blank"
+                        class="externallink">LinkedIn - Jerliana Martínez</a>
+                    <a href="https://www.instagram.com/jerlim.png_/" target="_blank" class="externallink">Instagram -
+                        @jerlim.png_ </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="pie-pagina">
+            <hr class="barra-horizontal">
+            <section id="info-footer" class="columnas-final">
+                <img class="huron" src="assets/assets-index/huron.png" alt="huron">
+                <div class="columna textos">
+                    <p class="body2">JERLIANA M.</p>
+                    <p class="body3">Estudiante de diseño de la universidad Diego Portales, enamorada de mi carrera y lo
+                        fascinante que el diseño en todas sus expresiones puede ser. La capacidad de crear algo nuevo en
+                        base a un lenguaje propio impulsa mi pasión y da forma a lo que soy.</p>
+                </div>
+                <hr class="barra-vertical">
+                <div class="columna vinculos">
+                    <ul>
+                        <li><a class="enlace2" href="sobre.html">sobre</a></li>
+                        <li><a class="enlace2" href="proyectos.html">proyectos</a></li>
+                        <li><a class="enlace2" href="contacto.html">contacto</a></li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="barra-horizontal">
+            <h1 class="footer-line">¡vamos a crear algo único!</h1>
+        </footer>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
