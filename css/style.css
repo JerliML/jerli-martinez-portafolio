@@ -22,32 +22,6 @@ main {
     justify-content: center;
 }
 
-@view-transition {
-    navigation: auto;
-}
-
-::view-transition-group(root) {
-    animation-duration: 0.8s;
-    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-::view-transition-old(root) {
-    animation: none;
-}
-
-::view-transition-new(root) {
-    animation-name: slide-in-bottom;
-}
-
-@keyframes slide-in-bottom {
-    from {
-        translate: 0 100vh;
-    }
-    to {
-        translate: 0 0;
-    }
-}
-
 /*---titulos---*/
 h1 {
     font-family: Bitter;
